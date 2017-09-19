@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import Swatch from './Swatch';
 import Navigation from './Navigation';
+import './ContentDisplay.css';
+import './colorCards.css';
 
 class ColorList extends Component {
   constructor(props) {
@@ -19,10 +21,10 @@ class ColorList extends Component {
       return <Swatch onSelect={this.props.onSelect} color={color}/>
     })
     return (
-      <div>
-        <ul>
+      <div className="colorListContainer">
+        <div className="colorListGrid">
           {colorChoices}
-        </ul>
+        </div>
         <Navigation
           page={this.state.page}
           changeToPageNumber={(pageNumber) => this.setState({page: pageNumber})}

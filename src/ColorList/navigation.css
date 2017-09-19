@@ -1,4 +1,26 @@
-.navigationContainer{
-  display: flex;
-  justify-content: space-between;
+.colorListContainer {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  padding: 40px;
+}
+
+.colorListGrid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  grid-auto-rows: 260px;
+  grid-column-gap: 53px;
+  grid-row-gap: 40px;
+}
+
+.navigationContainer {
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.navigationContainer > div {
+  display: inline-block;
+  margin: 10px;
 }

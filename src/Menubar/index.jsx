@@ -17,7 +17,11 @@ class Menubar extends React.Component{
     return(
       <div className="menuWrapper">
         <img className="icon" src={logo} />
-        <input className="search" placeholder="Search" value={this.state.searchText} onchange={this.handleChange} />
+        <input
+          className="search"
+          placeholder="Search"
+          value={this.state.searchText}
+          onchange={this.handleChange} />
       </div>
     );
   }

@@ -1,0 +1,15 @@
+.toolbarContainer {
+  width: 320px;
+  background-color: #D6D8D8;
+}
+
+.randomButton {
+  padding: 10px 30px;
+  border: 1px solid #363C3C;
+  color: #363C3C;
+  outline: none;
+  border-radius: 5px;
+  background: white;
+  font-size: 14px;
+  margin: 10px;
+}

@@ -1,19 +1,26 @@
 .menuWrapper{
-  height:100px;
   background-color: #363C3C;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 10px 20px;
 }
 
 .search{
-  margin-right:40px;
-  border-radius: 10px;
-  height:60px;
-  width:320px;
+  border-radius: 6px;
+  width: 320px;
   padding-left: 21px;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  margin-left: 10px;
 }
 
 .icon{
-  margin-left: 30px;
+  height: 40px;
+  margin-right: 10px;
 }

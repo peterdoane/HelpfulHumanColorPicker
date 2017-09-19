@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './toolbar.css';
 
 class Toolbar extends Component {
   constructor(props) {
@@ -9,7 +10,7 @@ class Toolbar extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="toolbarContainer">
         <button
           className="randomButton"
           onClick={this.handleRandomClick}
