@@ -20,6 +20,12 @@ class App extends Component {
         selectedColor: color
       })
     }
+    this.handleRandom = () => {
+      let color = this.state.colors[Math.floor(Math.random()*this.state.colors.length)];
+      this.setState({
+        selectedColor: color
+      })
+    }
   }
   render() {
     let content = this.state.selectedColor == null ? <ColorList onSelect={this.handleSelect} colors={this.state.colors}/> : <ColorDetail onSelect={this.handleSelect} color={this.state.selectedColor}/>;
@@ -27,7 +33,7 @@ class App extends Component {
       <div className="App">
         <Menubar />
         <div className="flexContainer">
-          <Toolbar />
+          <Toolbar onRandomClick={this.handleRandom}/>
           {content}
         </div>
       </div>

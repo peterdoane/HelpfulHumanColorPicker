@@ -4,13 +4,17 @@ class Toolbar extends Component {
   constructor(props) {
     super(props);
     this.handleRandomClick = (event) => {
-      console.info('RandomClicked')
+      this.props.onRandomClick();
     }
   }
   render() {
     return (
       <div>
-        <button className="randomButton" onClick={this.handleRandomClick}>Random Color</button>
+        <button
+          className="randomButton"
+          onClick={this.handleRandomClick}
+          >Random Color
+        </button>
         {/* COLOR LIST */}
       </div>
     );
