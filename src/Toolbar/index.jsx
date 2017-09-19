@@ -9,6 +9,9 @@ class Toolbar extends Component {
     }
   }
   render() {
+    let colorOptions = this.props.groupColors.map((colorOption) => {
+      return <div onClick={() => this.props.onSelectGroup(colorOption.value)}>{colorOption.name}</div>
+    })
     return (
       <div className="toolbarContainer">
         <button
@@ -16,7 +19,8 @@ class Toolbar extends Component {
           onClick={this.handleRandomClick}
           >Random Color
         </button>
-        {/* COLOR LIST */}
+        {colorOptions}
+        <div onClick={() => this.props.onSelectGroup(null)}>All Colors</div>
       </div>
     );
   }
