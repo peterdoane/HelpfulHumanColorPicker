@@ -8,6 +8,7 @@ class ColorDetail extends Component {
       <div>
         <div>
           <Swatch color={this.props.color}/>
+          <button onClick={() => {this.props.onSelect(null)}}>Clear</button>
         </div>
       </div>
     );
