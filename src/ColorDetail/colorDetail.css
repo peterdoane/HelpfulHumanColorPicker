@@ -1,3 +1,11 @@
 .detailContainer {
   flex-grow: 1;
 }
+.shades {
+  display: flex;
+}
+
+.shades .colorItem {
+  height: 100px;
+  width: 150px;
+}
