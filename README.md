@@ -1,10 +1,5 @@
 Peter Doane
 ============
--------------------     ----------------------------
-1 MyAddress                        email@example.com
-MyTown 1000                          @twitter_handle
-MyCountry                           1800 my-phone-nr
--------------------     ----------------------------
 
 Experience
 ----------
@@ -18,7 +13,7 @@ Worked with startup on React-Native app and TDD
 * Doing daily developer journals outlining my progress
 * Working with API developer to fix bugs
 
-* [link](https://knotis.com/).
+* [Knotis](https://knotis.com/)
 
 **360modern: Lead Front-End Developer**
 
@@ -31,6 +26,8 @@ Built Real Estate site from scratch in React-Native
 *	Consistently wrote performance-minded, highly-readable code with modular design patterns
 *	Mocked up designs in Sketch and Photoshop
 
+* [360modern](http://360modern.com/)
+
 **Galvanize: Web Development Fellow**
 
 * Developed 'Attractions' Mobile App made with React-Native. 'Like Tinder for things to do'. I presented the app at 'Feature Friday' an event put on by Founders Live.
@@ -38,7 +35,7 @@ Built Real Estate site from scratch in React-Native
 * Developed 'Caustic Acrostic' an acrostic spotify playlist maker for metal and punk rock fans utilizing the spotify API
 * Developed website that can catalog your record collection and value utilizing the Discogs API, JavaScript, jQuery, HTML/CSS and Materialize
 
-* [link](https://itunes.apple.com/us/app/attractions-quickly-find-things-to-do/id1262579888?mt=8).
+* [Attractions](https://itunes.apple.com/us/app/attractions-quickly-find-things-to-do/id1262579888?mt=8).
 
 Education
 ---------
@@ -51,59 +48,3 @@ Education
 
 2000-2005
 :  **Double Major: Literature & Environmental Studies**; Pitzer College, (Claremont,Ca)
-
-
-
-Technical Experience
---------------------
-
-My Cool Side Project
-:   For items which don't have a clear time ordering, a definition
-    list can be used to have named items.
-
-    * These items can also contain lists, but you need to mind the
-      indentation levels in the markdown source.
-    * Second item.
-
-Open Source
-:   List open source contributions here, perhaps placing emphasis on
-    the project names, for example the **Linux Kernel**, where you
-    implemented multithreading over a long weekend, or **node.js**
-    (with [link](http://nodejs.org)) which was actually totally
-    your idea...
-
-Programming Languages
-:   **first-lang:** Here, we have an itemization, where we only want
-    to add descriptions to the first few items, but still want to
-    mention some others together at the end. A format that works well
-    here is a description list where the first few items have their
-    first word emphasized, and the last item contains the final few
-    emphasized terms. Notice the reasonably nice page break in the pdf
-    version, which wouldn't happen if we generated the pdf via html.
-
-:   **second-lang:** Description of your experience with second-lang,
-    perhaps again including a [link] [ref], this time placing the url
-    reference elsewhere in the document to reduce clutter (see source
-    file).
-
-:   **obscure-but-impressive-lang:** We both know this one's pushing
-    it.
-
-:   Basic knowledge of **C**, **x86 assembly**, **forth**, **Common Lisp**
-
-[ref]: https://github.com/githubuser/superlongprojectname
-
-Extra Section, Call it Whatever You Want
-----------------------------------------
-
-* Human Languages:
-
-     * English (native speaker)
-     * ???
-     * This is what a nested list looks like.
-
-* Random tidbit
-
-* Other sort of impressive-sounding thing you did
-view rawresume hosted with ❤ by GitHub
-However, in the above approach the
