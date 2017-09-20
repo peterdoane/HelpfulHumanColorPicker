@@ -1,13 +1,12 @@
 .toolbarContainer {
   width: 270px;
-  min-width: 270px;
   background-color: #D6D8D8;
   padding: 60px 25px 30px;
   box-shadow: -1px -2px 10px 0px rgb(100,100,100);
 }
 
 .randomButton {
-  padding: 10px 00px;
+  padding: 10px;
   border: 1px solid #363C3C;
   color: #363C3C;
   outline: none;
@@ -32,4 +31,22 @@
   font-size: 28px;
   line-height: 34px;
   color: rgb(60, 60, 60);
+}
+
+@media (max-width: 800px) {
+  .toolbarContainer {
+    width: unset;
+    padding: 20px;
+  }
+
+  .randomButton {
+    width: unset;
+    margin: 0 auto 10px;
+    display: block;
+  }
+
+  .toolbarContainer > div {
+    display: inline-block;
+    margin: 0 10px;
+  }
 }

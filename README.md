@@ -35,7 +35,7 @@ Built Real Estate site from scratch in React-Native
 * Developed 'Caustic Acrostic' an acrostic spotify playlist maker for metal and punk rock fans utilizing the spotify API
 * Developed website that can catalog your record collection and value utilizing the Discogs API, JavaScript, jQuery, HTML/CSS and Materialize
 
-* [Attractions](https://itunes.apple.com/us/app/attractions-quickly-find-things-to-do/id1262579888?mt=8).
+* [Attractions](https://itunes.apple.com/us/app/attractions-quickly-find-things-to-do/id1262579888?mt=8)
 
 Education
 ---------

@@ -1,21 +1,14 @@
 .shades {
-  display: flex;
-  padding: 0px 15px 20px 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-auto-rows: 150px;
+  padding: 0px 40px 20px;
 }
-
-.shades .colorItem {
-  width: 210px;
-  height: 150px;
-  margin-right: 30px;
-}
-
 
 .detailContainer {
   flex-grow: 1;
-}
-
-.detailContainer {
-  width: calc(100vw - 320px);
 }
 
 .detailContainer .primaryColorItem .label {
@@ -25,7 +18,7 @@
 }
 
 .primaryColorItem > .colorItem {
-  height: 300px;
+  height: 400px;
   width: 100%;
 }
 
