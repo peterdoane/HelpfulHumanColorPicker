@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './toolbar.css';
+import {inject, observer} from 'mobx-react';
 
 class Toolbar extends Component {
   constructor(props) {
@@ -8,9 +9,18 @@ class Toolbar extends Component {
       this.props.onRandomClick();
     }
   }
+
+  handleAllColorsClick = () => {
+    this.props.colors.resetFilters();
+  };
+
+  handleSelectGroup = (colorGroup) => {
+    this.props.colors.filter(colorGroup);
+  };
+
   render() {
-    let colorOptions = this.props.groupColors.map((colorOption) => {
-      return <div onClick={() => this.props.onSelectGroup(colorOption.value)}>{colorOption.name}</div>
+    let colorOptions = this.props.colors.colorGroups.slice().map((colorOption) => {
+      return <a className="toolbarButton" onClick={() => this.handleSelectGroup(colorOption.value)}>{colorOption.name}</a>
     })
     return (
       <div className="toolbarContainer">
@@ -20,11 +30,11 @@ class Toolbar extends Component {
           >Random Color
         </button>
         {colorOptions}
-        <div onClick={() => this.props.onSelectGroup(null)}>All Colors</div>
+        <a className="toolbarButton" onClick={this.handleAllColorsClick}>All Colors</a>
       </div>
     );
   }
 
 }
 
-export default Toolbar;
+export default inject('colors')(observer(Toolbar));

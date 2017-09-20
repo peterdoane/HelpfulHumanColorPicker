@@ -1,18 +1,21 @@
 import React from 'react';
 import menubar from './menubar.css';
 import logo from '../logo-symbol.png';
+import {inject} from 'mobx-react';
 
 class Menubar extends React.Component{
   constructor(props) {
     super(props);
     this.state = {searchText:''};
-
-    this.handleChange = (event) =>{
-        this.setState({
-          searchText: event.target.value,
-        })
-      }
   }
+
+  handleChange = (event) => {
+    this.setState({
+      searchText: event.target.value,
+    })
+    this.props.colors.search(event.target.value);
+  }
+
   render(){
     return(
       <div className="menuWrapper">
@@ -21,10 +24,10 @@ class Menubar extends React.Component{
           className="search"
           placeholder="Search"
           value={this.state.searchText}
-          onchange={this.handleChange} />
+          onChange={this.handleChange} />
       </div>
     );
   }
 }
 
-export default Menubar;
+export default inject('colors')(Menubar);

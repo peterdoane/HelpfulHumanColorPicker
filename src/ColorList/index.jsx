@@ -3,6 +3,7 @@ import Swatch from './Swatch';
 import Navigation from './Navigation';
 import './ContentDisplay.css';
 import './colorCards.css';
+import {inject, observer} from 'mobx-react';
 
 class ColorList extends Component {
   constructor(props) {
@@ -16,8 +17,8 @@ class ColorList extends Component {
     let itemsPerPage = this.state.itemsPerPage;
     let pageStart = itemsPerPage * this.state.page;
     let pageEnd = pageStart + itemsPerPage -1;
-    let pageCount = Math.ceil(this.props.colors.length/itemsPerPage);
-    const colorChoices = this.props.colors.slice(pageStart, pageEnd).map((color) => {
+    let pageCount = Math.ceil(this.props.colors.filteredColors.length/itemsPerPage);
+    const colorChoices = this.props.colors.filteredColors.slice(pageStart, pageEnd).map((color) => {
       return <Swatch onSelect={this.props.onSelect} color={color}/>
     })
     return (
@@ -35,4 +36,4 @@ class ColorList extends Component {
   }
 }
 
-export default ColorList;
+export default inject('colors')(observer(ColorList));
