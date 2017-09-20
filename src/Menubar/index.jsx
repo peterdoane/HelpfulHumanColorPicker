@@ -16,10 +16,14 @@ class Menubar extends React.Component{
     this.props.colors.search(event.target.value);
   }
 
+  handleLogoClick = () => {
+    this.props.colors.selectedColor = null;
+  };
+
   render(){
     return(
       <div className="menuWrapper">
-        <img className="icon" src={logo} />
+        <a onClick={this.handleLogoClick}><img className="icon" src={logo} /></a>
         <input
           className="search"
           placeholder="Search"

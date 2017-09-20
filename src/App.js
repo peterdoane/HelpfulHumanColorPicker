@@ -9,39 +9,35 @@ import ColorDetail from './ColorDetail';
 import {getClosestColor} from './colorComparison';
 import createStores from './stores';
 import {Provider} from 'mobx-react';
+import {autorun} from 'mobx';
 
 const stores = createStores();
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      selectedColor: null,
-      //selectedGroup: null,
-    };
-    /*this.handleSelectGroup = (color) => {
-      this.setState({
-        selectedGroup: color,
-      })
-    }*/
+
     this.handleSelect = (color) => {
-      this.setState({
-        selectedColor: color,
-      })
+      stores.colors.selectedColor = color;
     }
+
     this.handleRandom = () => {
-      let color = stores.colors.colors[Math.floor(Math.random()*stores.colors.colors.length)];
-      this.setState({
-        selectedColor: color,
-      })
+      let color = stores.colors.allColors[Math.floor(Math.random()*stores.colors.allColors.length)];
+      stores.colors.selectedColor = color;
     }
   }
 
+  componentWillMount() {
+    autorun(() => {
+      if (stores.colors.selectedColor || !stores.colors.selectedColor) {
+        this.forceUpdate();
+      }
+    });
+  }
+
   render() {
-    /*let colors = this.state.selectedGroup ? underscore.filter(stores.colors.colors.slice(), (color) => {
-      return getClosestColor(color, stores.colors.colorGroups.map((colorOption)=>{return colorOption.value})) === this.state.selectedGroup;
-    }): stores.colors.colors;*/
-    let content = this.state.selectedColor == null ? <ColorList onSelect={this.handleSelect}/> : <ColorDetail onSelect={this.handleSelect} color={this.state.selectedColor}/>;
+    const selectedColor = stores.colors.selectedColor;
+    let content = selectedColor == null ? <ColorList onSelect={this.handleSelect}/> : <ColorDetail/>;
     return (
       <Provider {...stores}>
         <div className="App">

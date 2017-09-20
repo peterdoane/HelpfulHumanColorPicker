@@ -16,7 +16,7 @@ class ColorList extends Component {
   render() {
     let itemsPerPage = this.state.itemsPerPage;
     let pageStart = itemsPerPage * this.state.page;
-    let pageEnd = pageStart + itemsPerPage -1;
+    let pageEnd = pageStart + itemsPerPage;
     let pageCount = Math.ceil(this.props.colors.filteredColors.length/itemsPerPage);
     const colorChoices = this.props.colors.filteredColors.slice(pageStart, pageEnd).map((color) => {
       return <Swatch onSelect={this.props.onSelect} color={color}/>

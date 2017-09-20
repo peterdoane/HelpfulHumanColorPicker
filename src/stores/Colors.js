@@ -1,4 +1,4 @@
-import {observable} from 'mobx';
+import {observable, extendObservable} from 'mobx';
 import ColorGenerator from '../ColorGenerator';
 import Color from 'color';
 import underscore from 'underscore';
@@ -6,6 +6,9 @@ import {getClosestColor} from '../colorComparison';
 
 class Colors {
   constructor() {
+    extendObservable(this, {
+        selectedColor: null,
+    });
     this.allColors = observable(ColorGenerator());
     this.filteredColors = observable(this.allColors.slice());
     this.colorGroups = observable(this.generateColorGroups());

@@ -3,18 +3,18 @@ import './toolbar.css';
 import {inject, observer} from 'mobx-react';
 
 class Toolbar extends Component {
-  constructor(props) {
-    super(props);
-    this.handleRandomClick = (event) => {
-      this.props.onRandomClick();
-    }
-  }
+  handleRandomClick = (event) => {
+    this.props.colors.selectedColor = null;
+    this.props.onRandomClick();
+  };
 
   handleAllColorsClick = () => {
+    this.props.colors.selectedColor = null;
     this.props.colors.resetFilters();
   };
 
   handleSelectGroup = (colorGroup) => {
+    this.props.colors.selectedColor = null;
     this.props.colors.filter(colorGroup);
   };
 
