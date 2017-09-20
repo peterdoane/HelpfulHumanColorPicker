@@ -2,14 +2,15 @@ Peter Doane
 ============
 
 -------------------     ----------------------------
-6257 Vassar Ave NE             peterdoane@gmail.com
-Seattle, Wa 98115              @pdoane
+6257 Vassar Ave NE              peterdoane@gmail.com
+Seattle Wa                       @pdoane
+98115                           4257652900
 -------------------     ----------------------------
 
 Experience
 ----------
 
-** Knotis: Full-Stack Developer**
+**Knotis: Full-Stack Developer**
 
 Worked with startup on React-Native app and TDD
 
@@ -20,7 +21,7 @@ Worked with startup on React-Native app and TDD
 
 * [link](https://knotis.com/).
 
-**3 60modern: Lead Front-End Developer**
+**360modern: Lead Front-End Developer**
 
 Built Real Estate site from scratch in React-Native
 
@@ -31,7 +32,7 @@ Built Real Estate site from scratch in React-Native
 *	Consistently wrote performance-minded, highly-readable code with modular design patterns
 *	Mocked up designs in Sketch and Photoshop
 
-** Galvanize: Web Development Fellow
+**Galvanize: Web Development Fellow**
 
 * Developed 'Attractions' Mobile App made with React-Native. 'Like Tinder for things to do'. I presented the app at 'Feature Friday' an event put on by Founders Live.
 * Developed 'Beets' A multi-user drum machine for collaborative beat-making utilizing the web-audio api.
@@ -44,13 +45,13 @@ Education
 ---------
 
 2016
-:   **Certificate, Web Development**; Galvanize(Seattle)
+:   **Certificate, Web Development**; Galvanize (Seattle)
 
 2011-2014
 :   **MBA**; Pinchot University (Seattle/Bainbridge)
 
 2000-2005
-:  **Double Major: Literature & Environmental Studies**; Pitzer College, Claremont, Ca
+:  **Double Major: Literature & Environmental Studies**; Pitzer College, (Claremont,Ca)
 
 
 
