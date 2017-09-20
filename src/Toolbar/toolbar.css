@@ -1,15 +1,35 @@
 .toolbarContainer {
-  width: 320px;
+  width: 270px;
+  min-width: 270px;
   background-color: #D6D8D8;
+  padding: 60px 25px 30px;
+  box-shadow: -1px -2px 10px 0px rgb(100,100,100);
 }
 
 .randomButton {
-  padding: 10px 30px;
+  padding: 10px 00px;
   border: 1px solid #363C3C;
   color: #363C3C;
   outline: none;
   border-radius: 5px;
   background: white;
-  font-size: 14px;
-  margin: 10px;
+  font-size: 17px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+}
+
+.randomButton:hover {
+  background-color: #363C3C;
+  color: rgb(220, 220, 220);
+  cursor: pointer;
+}
+
+.toolbarContainer > div {
+  text-align: left;
+  margin: 10px 0 9px;
+  font-size: 28px;
+  line-height: 34px;
+  color: rgb(60, 60, 60);
 }

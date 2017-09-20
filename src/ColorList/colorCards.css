@@ -1,8 +1,14 @@
 .colorItem {
   position: relative;
-  box-shadow: 0 0 4px 0 rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 0 4px 0 rgba(0,0,0,0.5);
+          box-shadow: 0 0 4px 0 rgba(0,0,0,0.5);
   border-radius: 8px;
   overflow: hidden;
+}
+
+.colorItem:hover {
+  box-shadow: 0px 1px 5px 1px rgb(100,100,100);
+  cursor: pointer;
 }
 
 .colorItem .label {
@@ -13,14 +19,5 @@
   text-align: left;
   padding: 10px 20px;
   background-color: #fff;
-  color: #000;
-}
-
-.primaryColorItem > .colorItem {
-  height: 300px;
-  width: 100%;
-}
-
-.primaryColorItem{
-  padding: 40px;
+  color: rgb(80,80,80);
 }
