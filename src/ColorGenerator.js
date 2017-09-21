@@ -1,15 +1,18 @@
 import color from 'color';
+var Color = require("color")
 
-function generateColor(hue){
-  var Color = require("color")
-  var newColor = Color.hsl(hue,100,50);
+function generateColor(hue, saturation) {
+  var newColor = Color.hsl(hue, saturation, 50);
+  // var Color = require("color")
   return newColor;
 }
 
-function generateColors(){
+function generateColors() {
   var result = [];
-  for(var i =0; i<100; i++){
-    result.push(generateColor(i*3.6));
+  for (var i = 0; i < 25; i++) {
+    for (var s = 1; s < 6; s++) {
+      result.push(generateColor(i * 14.4, s * 20 - 10))
+    };
   }
   return result;
 }

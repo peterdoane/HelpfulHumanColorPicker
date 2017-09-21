@@ -15,10 +15,17 @@ class Colors {
   }
 
   generateColorGroups(){
-    let array = ['red', 'orange', 'yellow', 'green', 'blue', 'purple'];
+    let array = ['red', 'orange', 'yellow', '#00FF00', 'blue', 'purple', '#A0522D', 'grey'];
     return array.map((colorName) => {
+      let outputName = colorName;
+      if(colorName === array[3]){
+        outputName = 'green';
+      }
+      else if(colorName === array[6]){
+        outputName = 'brown';
+      }
       return {
-        name: colorName,
+        name: outputName,
         value: Color(colorName),
       }
     })
@@ -26,7 +33,7 @@ class Colors {
 
   filter(colorGroup) {
     const nextColors = underscore.filter(this.allColors.slice(), (color) => {
-      return getClosestColor(color, this.colorGroups.map((colorOption)=>{return colorOption.value})) === colorGroup;
+      return getClosestColor(color, this.colorGroups.map((colorOption)=>{return colorOption.value})).toString() === colorGroup.toString();
     });
     this.filteredColors.replace(nextColors);
   }
