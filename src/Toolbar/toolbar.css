@@ -10,6 +10,11 @@
   cursor: pointer;
 }
 
+.toolbarButton:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: background-color 300ms
+}
+
 .randomButton {
   padding: 10px;
   border: 1px solid #363C3C;
