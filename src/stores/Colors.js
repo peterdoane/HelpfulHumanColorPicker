@@ -15,7 +15,7 @@ class Colors {
   }
 
   generateColorGroups(){
-    let array = ['red', 'orange', 'yellow', '#00FF00', 'blue', 'purple', '#A0522D', 'grey'];
+    let array = ['red', 'orange', 'yellow', '#00FF00', 'blue', 'purple', '#A0522D', '#BEBEBE'];
     return array.map((colorName) => {
       let outputName = colorName;
       if(colorName === array[3]){
@@ -23,6 +23,9 @@ class Colors {
       }
       else if(colorName === array[6]){
         outputName = 'brown';
+      }
+      else if(colorName === array[7]){
+        outputName = 'grey';
       }
       return {
         name: outputName,
